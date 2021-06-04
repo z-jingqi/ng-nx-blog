@@ -15,7 +15,8 @@
     "skipDefaultLibCheck": true,
     "baseUrl": ".",
     "paths": {
-      "@jing-qi/api-interfaces": ["libs/api-interfaces/src/index.ts"]
+      "@jing-qi/api-interfaces": ["libs/api-interfaces/src/index.ts"],
+      "@jing-qi/auth": ["libs/auth/src/index.ts"]
     }
   },
   "exclude": ["node_modules", "tmp"]
