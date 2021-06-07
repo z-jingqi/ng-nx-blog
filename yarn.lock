@@ -171,6 +171,15 @@
   dependencies:
     tslib "^2.1.0"
 
+"@angular/cdk@12.0.3":
+  version "12.0.3"
+  resolved "https://registry.nlark.com/@angular/cdk/download/@angular/cdk-12.0.3.tgz#ed2ab6da003dd39559c732186cd5e64536bd60fa"
+  integrity sha1-7Sq22gA905VZxzIYbNXmRTa9YPo=
+  dependencies:
+    tslib "^2.1.0"
+  optionalDependencies:
+    parse5 "^5.0.0"
+
 "@angular/cli@^12.0.0":
   version "12.0.3"
   resolved "https://registry.nlark.com/@angular/cli/download/@angular/cli-12.0.3.tgz#cd1cb61fb51e406c42edc8dbae17ed6b0e6bcdba"
@@ -249,6 +258,13 @@
   version "12.0.3"
   resolved "https://registry.nlark.com/@angular/language-service/download/@angular/language-service-12.0.3.tgz#5240db3612b32d0d5434a6e27c5dc2678e1f2300"
   integrity sha1-UkDbNhKzLQ1UNKbifF3CZ44fIwA=
+
+"@angular/material@12.0.3":
+  version "12.0.3"
+  resolved "https://registry.nlark.com/@angular/material/download/@angular/material-12.0.3.tgz#f0fe83061fdeb9330b0ea0b1683a5e4f49bef1d1"
+  integrity sha1-8P6DBh/euTMLDqCxaDpeT0m+8dE=
+  dependencies:
+    tslib "^2.1.0"
 
 "@angular/platform-browser-dynamic@^12.0.0":
   version "12.0.3"
@@ -8844,6 +8860,11 @@ parse5@6.0.1, parse5@^6.0.1:
   version "6.0.1"
   resolved "https://registry.nlark.com/parse5/download/parse5-6.0.1.tgz#e1a1c085c569b3dc08321184f19a39cc27f7c30b"
   integrity sha1-4aHAhcVps9wIMhGE8Zo5zCf3wws=
+
+parse5@^5.0.0:
+  version "5.1.1"
+  resolved "https://registry.nlark.com/parse5/download/parse5-5.1.1.tgz#f68e4e5ba1852ac2cadc00f4555fff6c2abb6178"
+  integrity sha1-9o5OW6GFKsLK3AD0VV//bCq7YXg=
 
 parseurl@~1.3.2, parseurl@~1.3.3:
   version "1.3.3"

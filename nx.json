@@ -32,7 +32,13 @@
     "api-interfaces": {
       "tags": []
     },
-    "auth": {
+    "welcome": {
+      "tags": []
+    },
+    "header-bar": {
+      "tags": []
+    },
+    "shared-style": {
       "tags": []
     }
   }
