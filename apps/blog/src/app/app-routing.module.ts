@@ -3,8 +3,8 @@ import { NgModule } from "@angular/core";
 import { RouterModule, Routes } from "@angular/router";
 
 const routes: Routes = [
-    { path: '', redirectTo: 'signin', pathMatch: 'full' },
-    { path: 'welcome', loadChildren: () => import('./pages/welcome/welcome.module').then(m => m.WelcomeModule) }
+    { path: '', redirectTo: 'welcome', pathMatch: 'full' },
+    { path: 'welcome', loadChildren: () => import('./router-modules/welcome/welcome.module').then(m => m.WelcomeModule) }
 ];
 
 @NgModule({

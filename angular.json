@@ -223,47 +223,6 @@
         }
       }
     },
-    "welcome": {
-      "projectType": "library",
-      "root": "libs/welcome",
-      "sourceRoot": "libs/welcome/src",
-      "prefix": "jing-qi",
-      "architect": {
-        "build": {
-          "builder": "@nrwl/angular:ng-packagr-lite",
-          "outputs": ["dist/libs/welcome"],
-          "options": {
-            "project": "libs/welcome/ng-package.json"
-          },
-          "configurations": {
-            "production": {
-              "tsConfig": "libs/welcome/tsconfig.lib.prod.json"
-            },
-            "development": {
-              "tsConfig": "libs/welcome/tsconfig.lib.json"
-            }
-          },
-          "defaultConfiguration": "production"
-        },
-        "test": {
-          "builder": "@nrwl/jest:jest",
-          "outputs": ["coverage/libs/welcome"],
-          "options": {
-            "jestConfig": "libs/welcome/jest.config.js",
-            "passWithNoTests": true
-          }
-        },
-        "lint": {
-          "builder": "@nrwl/linter:eslint",
-          "options": {
-            "lintFilePatterns": [
-              "libs/welcome/src/**/*.ts",
-              "libs/welcome/src/**/*.html"
-            ]
-          }
-        }
-      }
-    },
     "header-bar": {
       "projectType": "library",
       "root": "libs/header-bar",
@@ -325,6 +284,47 @@
             "lintFilePatterns": [
               "libs/shared-style/src/**/*.ts",
               "libs/shared-style/src/**/*.html"
+            ]
+          }
+        }
+      }
+    },
+    "video-background": {
+      "projectType": "library",
+      "root": "libs/video-background",
+      "sourceRoot": "libs/video-background/src",
+      "prefix": "jing-qi",
+      "architect": {
+        "build": {
+          "builder": "@nrwl/angular:ng-packagr-lite",
+          "outputs": ["dist/libs/video-background"],
+          "options": {
+            "project": "libs/video-background/ng-package.json"
+          },
+          "configurations": {
+            "production": {
+              "tsConfig": "libs/video-background/tsconfig.lib.prod.json"
+            },
+            "development": {
+              "tsConfig": "libs/video-background/tsconfig.lib.json"
+            }
+          },
+          "defaultConfiguration": "production"
+        },
+        "test": {
+          "builder": "@nrwl/jest:jest",
+          "outputs": ["coverage/libs/video-background"],
+          "options": {
+            "jestConfig": "libs/video-background/jest.config.js",
+            "passWithNoTests": true
+          }
+        },
+        "lint": {
+          "builder": "@nrwl/linter:eslint",
+          "options": {
+            "lintFilePatterns": [
+              "libs/video-background/src/**/*.ts",
+              "libs/video-background/src/**/*.html"
             ]
           }
         }

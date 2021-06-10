@@ -1,0 +1,9 @@
+@import "layout";
+
+.background {
+  @include positionFixedFull();
+  .video {
+    object-fit: cover;
+    @include fullwh();
+  }
+}

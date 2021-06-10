@@ -32,13 +32,13 @@
     "api-interfaces": {
       "tags": []
     },
-    "welcome": {
-      "tags": []
-    },
     "header-bar": {
       "tags": []
     },
     "shared-style": {
+      "tags": []
+    },
+    "video-background": {
       "tags": []
     }
   }

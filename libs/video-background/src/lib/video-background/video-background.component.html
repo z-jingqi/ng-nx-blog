@@ -1,0 +1,5 @@
+<div class="background">
+    <video class="video" [poster]="posterUrl" loop muted loop oncanplay="this.play()" onloadedmetadata="this.muted = true">
+        <source [src]="videoUrl" type="video/mp4">
+    </video>
+</div>
