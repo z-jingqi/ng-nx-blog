@@ -22,7 +22,8 @@
       "@jing-qi/api-interfaces": ["libs/api-interfaces/src/index.ts"],
       "@jing-qi/header-bar": ["libs/header-bar/src/index.ts"],
       "@jing-qi/shared-style": ["libs/shared-style/src/index.ts"],
-      "@jing-qi/video-background": ["libs/video-background/src/index.ts"]
+      "@jing-qi/video-background": ["libs/video-background/src/index.ts"],
+      "@jing-qi/anime-nav": ["libs/anime-nav/src/index.ts"]
     }
   },
   "exclude": ["node_modules", "tmp"]

@@ -5,5 +5,6 @@ module.exports = {
     '<rootDir>/libs/header-bar',
     '<rootDir>/libs/shared-style',
     '<rootDir>/libs/video-background',
+    '<rootDir>/libs/anime-nav',
   ],
 };

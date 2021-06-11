@@ -1,0 +1,26 @@
+@mixin position($type, $top: 0, $right: 0, $bottom: 0, $left: 0) {
+  position: $type;
+  @if $top {
+    top: $top;
+  }
+  @if $bottom {
+    bottom: $bottom;
+  }
+  @if $left {
+    left: $left;
+  }
+  @if $right {
+    right: $right;
+  }
+}
+$nav-container-selector: '.nav-container';
+#{$nav-container-selector} {
+  @include position(absolute);
+}
+
+@media screen and (min-width: 1000px) {
+  #{$nav-container-selector} {
+    width: 100vh;
+    
+  }
+}

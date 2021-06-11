@@ -329,6 +329,47 @@
           }
         }
       }
+    },
+    "anime-nav": {
+      "projectType": "library",
+      "root": "libs/anime-nav",
+      "sourceRoot": "libs/anime-nav/src",
+      "prefix": "jing-qi",
+      "architect": {
+        "build": {
+          "builder": "@nrwl/angular:ng-packagr-lite",
+          "outputs": ["dist/libs/anime-nav"],
+          "options": {
+            "project": "libs/anime-nav/ng-package.json"
+          },
+          "configurations": {
+            "production": {
+              "tsConfig": "libs/anime-nav/tsconfig.lib.prod.json"
+            },
+            "development": {
+              "tsConfig": "libs/anime-nav/tsconfig.lib.json"
+            }
+          },
+          "defaultConfiguration": "production"
+        },
+        "test": {
+          "builder": "@nrwl/jest:jest",
+          "outputs": ["coverage/libs/anime-nav"],
+          "options": {
+            "jestConfig": "libs/anime-nav/jest.config.js",
+            "passWithNoTests": true
+          }
+        },
+        "lint": {
+          "builder": "@nrwl/linter:eslint",
+          "options": {
+            "lintFilePatterns": [
+              "libs/anime-nav/src/**/*.ts",
+              "libs/anime-nav/src/**/*.html"
+            ]
+          }
+        }
+      }
     }
   }
 }

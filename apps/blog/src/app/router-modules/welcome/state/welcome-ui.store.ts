@@ -1,6 +1,6 @@
 import { Injectable } from '@angular/core';
 import { EntityState, EntityStore, EntityUIStore, StoreConfig } from '@datorama/akita';
-import { WelcomeUI } from './welcome-ui.model';
+import { createWelcomeUI, WelcomeUI } from './welcome-ui.model';
 
 export type WelcomeUIState = EntityState<WelcomeUI>
 
@@ -12,7 +12,7 @@ export class WelcomeUIStore extends EntityStore<WelcomeUIState> {
 
   constructor() {
     super();
-    this.createUIStore();
+    this.createUIStore(createWelcomeUI({}));
   }
 
 }
