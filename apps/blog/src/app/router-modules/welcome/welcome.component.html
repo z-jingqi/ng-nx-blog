@@ -1,6 +1,9 @@
 <div class="welcome">
-    <ng-container *ngIf="(videoData$ | async) as videoData">
-        <!-- <jing-qi-video-background [videoUrl]="videoData.videoUrl" [posterUrl]="videoData.posterUrl">
-        </jing-qi-video-background> -->
+    <!-- <ng-container *ngIf="(videoData$ | async) as videoData">
+        <jing-qi-video-background [videoUrl]="videoData.videoUrl" [posterUrl]="videoData.posterUrl">
+        </jing-qi-video-background>
+    </ng-container> -->
+    <ng-container *ngIf="(navItems$ | async) as navItems">
+        <jing-qi-anime-nav-container [animeNavs]="navItems"></jing-qi-anime-nav-container>
     </ng-container>
 </div>

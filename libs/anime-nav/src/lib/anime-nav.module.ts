@@ -9,5 +9,6 @@ import { AnimeNavItemComponent } from './anime-nav-item/anime-nav-item.component
     AnimeNavContainerComponent,
     AnimeNavItemComponent
   ],
+  exports: [AnimeNavContainerComponent]
 })
-export class AnimeNavModule {}
+export class AnimeNavModule { }

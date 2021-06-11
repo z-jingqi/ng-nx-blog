@@ -1,8 +1,8 @@
-import { Component, OnInit, ChangeDetectionStrategy } from '@angular/core';
+import { Component, ChangeDetectionStrategy, OnInit } from '@angular/core';
 import { Observable } from 'rxjs';
-import { WelcomeUI } from './state/welcome-ui.model';
-import { WelcomeUIQuery } from './state/welcome-ui.query';
-import { WelcomeUIService } from './state/welcome-ui.service';
+import { Nav } from './states/nav-state/nav.model';
+import { NavQuery } from './states/nav-state/nav.query';
+import { NavService } from './states/nav-state/nav.service';
 
 @Component({
   selector: 'jing-qi-welcome',
@@ -12,23 +12,24 @@ import { WelcomeUIService } from './state/welcome-ui.service';
 })
 export class WelcomeComponent implements OnInit {
 
-  videoData$!: Observable<WelcomeUI | undefined>;
+  navItems$!: Observable<Nav[]>;
 
   constructor(
-    private welcomeUIQuery: WelcomeUIQuery,
-    private welcomeUIService: WelcomeUIService
+    private navService: NavService,
+    private navQuery: NavQuery
   ) { }
 
-  ngOnInit(): void {
-    this.getWelcomeUIData();
-    this.queryVideoData();
+  ngOnInit() {
+    this.getNavItems();
+    this.selectNavItems();
   }
 
-  getWelcomeUIData() {
-    this.welcomeUIService.getVideoData();
+  getNavItems() {
+    this.navService.getNavItems();
   }
 
-  queryVideoData() {
-    this.videoData$ = this.welcomeUIQuery.selectFirst();
+  selectNavItems() {
+    this.navItems$ = this.navQuery.selectAll();
   }
+
 }

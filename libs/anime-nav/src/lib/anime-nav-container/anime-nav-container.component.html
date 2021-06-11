@@ -1,7 +1,7 @@
 <nav class="nav-container">
     <ul class="nav-list">
         <li class="nav-item" *ngFor="let nav of animeNavs">
-            <button type="button">{{nav.name}}</button>
+            <button class="nav-item-button" type="button" [ngStyle]="{backgroundColor: nav.color}">{{nav.name}}</button>
         </li>
     </ul>
 </nav>

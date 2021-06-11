@@ -1,6 +1,6 @@
 export type AnimeNav = {
-    id: string;
+    id: string | number;
     name: string;
     color: string;
-    collapsed: boolean;
+    collapsed?: boolean;
 }
